@@ -13,6 +13,7 @@ CREATE TABLE IF NOT EXISTS `Generos` (
   UNIQUE INDEX `nombre_genero_UNIQUE` (`nombre_genero` ASC)
 ) ENGINE = InnoDB;
 
+select * from Generos 
 
 -- -----------------------------------------------------
 -- Table `Artistas`
@@ -26,6 +27,7 @@ CREATE TABLE IF NOT EXISTS `Artistas` (
   UNIQUE INDEX `nombre_artista_UNIQUE` (`nombre_artista` ASC)
 ) ENGINE = InnoDB;
 
+select * from Artistas
 
 -- -----------------------------------------------------
 -- Table `Albumes`
@@ -45,6 +47,7 @@ CREATE TABLE IF NOT EXISTS `Albumes` (
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
+select * from Albumes
 
 -- -----------------------------------------------------
 -- Table `Canciones`
@@ -71,6 +74,7 @@ CREATE TABLE IF NOT EXISTS `Canciones` (
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
 
+select * from Canciones
 
 -- -----------------------------------------------------
 -- Table `Usuarios`
@@ -87,6 +91,7 @@ CREATE TABLE IF NOT EXISTS `Usuarios` (
   UNIQUE INDEX `nombre_usuario_UNIQUE` (`nombre_usuario` ASC)
 ) ENGINE = InnoDB;
 
+select * from Usuarios
 
 -- -----------------------------------------------------
 -- Table `Playlists`
@@ -105,6 +110,8 @@ CREATE TABLE IF NOT EXISTS `Playlists` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
+
+select * from Playlists
 
 
 -- -----------------------------------------------------
@@ -127,3 +134,5 @@ CREATE TABLE IF NOT EXISTS `Canciones_Playlist` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION
 ) ENGINE = InnoDB;
+
+select * from Canciones_playlist
